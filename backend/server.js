@@ -10,8 +10,8 @@ const app = express();
 const cors = require('cors');
 
 // Middleware
-app.use(express.json()); // To use Postman data in console [ need to use json type in postman]
-app.use(express.urlencoded({ extended: false })); // To use Postman data in console [ need to use url encoded (Body >> url encoded) type in postman]
+app.use(express.json()); 
+app.use(express.urlencoded({ extended: false })); 
 
 app.use(cors({
   origin: [
