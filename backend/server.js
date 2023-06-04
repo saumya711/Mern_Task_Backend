@@ -36,9 +36,11 @@ const startServer = async (arg) => {
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);
     });
+    return server; 
   } catch (error) {
     console.log(error);
   }
 };
 
-startServer();
+module.exports = startServer();;
+
